@@ -1,0 +1,45 @@
+
+@prefix : <http://purl.org/nbetancort/modeOfCollection#> .
+@prefix dc: <http://dublincore.org/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ddi: <http://purl.org/dcx/lrmi-vocabs/interactivityType/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a skos:ConceptScheme ;
+    dct:title "Mode of collection"@en, "Erhebungsverfahren"@de ;
+    dc:creator "Research data centre Qualiservice"@en, "Forschungsdatenzentrum Qualiservice"@de ;
+    dct:description "Das kontrollierte Vokabular Erhebungsverfahren beschreibt wie die Daten erhoben/gewonnen worden sind."@de ;
+    dct:source "Based on the DDI controlled vocabulary Mode of collection urn:ddi-cv:ModeOfCollection"@en ;
+    dct:issued "2020-11-24"^^xsd:date ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/> ;
+    skos:hasTopConcept :FaceToFace, :Telephone, :WebBased, :Email .
+
+:FaceToFace a skos:Concept ;
+    skos:prefLabel "Face-to-face"@en ;
+    skos:definition "In person"@en ;
+    dct:source "Based on the DDI controlled vocabulary Mode of collection urn:ddi-cv:ModeOfCollection"@en ;
+    skos:inScheme : .
+
+:Telephone a skos:Concept ;
+    skos:prefLabel "Telephone"@en ;
+    skos:definition "Telephone."@en ;
+    dct:source "Based on the DDI controlled vocabulary Mode of collection urn:ddi-cv:ModeOfCollection"@en ;
+    skos:inScheme : .
+
+:WebBased a skos:Concept ;
+    skos:prefLabel "WebBased"@en ;
+    skos:definition "Web-based."@en ;
+    dct:source "Based on the DDI controlled vocabulary Mode of collection urn:ddi-cv:ModeOfCollection"@en ;
+    skos:inScheme : .
+
+:Email a skos:Concept ;
+    skos:prefLabel "Email"@en ;
+    skos:definition "E-mail."@en ;
+    dct:source "Based on the DDI controlled vocabulary Mode of collection urn:ddi-cv:ModeOfCollection"@en ;
+    skos:inScheme : .
